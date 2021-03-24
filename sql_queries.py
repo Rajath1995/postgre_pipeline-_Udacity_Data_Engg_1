@@ -30,18 +30,18 @@ user_table_create = ("""CREATE TABLE IF NOT EXISTS users(
 
 song_table_create = ("""CREATE TABLE IF NOT EXISTS songs(
                         song_id varchar NOT NULL,
-                        title varchar,
-                        artist_id varchar,
-                        year int,
-                        duration float,
+                        title varchar NOT NULL,
+                        artist_id varchar NOT NULL,
+                        year int NOT NULL,
+                        duration float NOT NULL,
                         PRIMARY KEY (song_id))""")
 
 artist_table_create = ("""CREATE TABLE IF NOT EXISTS artists(
                         artist_id varchar NOT NULL,
                         name varchar,
-                        location varchar,
-                        lattitude numeric,
-                        longitude numeric,
+                        location varchar NOT NULL,
+                        lattitude numeric NOT NULL,
+                        longitude numeric NOT NULL,
                         PRIMARY KEY (artist_id))""")
 
 time_table_create = ("""CREATE TABLE IF NOT EXISTS time(
