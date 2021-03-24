@@ -27,3 +27,9 @@ DIMENSION Tables: users, songs, artists and time table.
 The analytic team is particularly interested in understanding what songs users are listening to, but would like a data engineer to create a Postgres database with tables designed to optimize queries on song play analysis. This is where I come in.
 
 The data we receive is in JSON files, which can take time to analysis. Our goal is to import the data into a Postgres database and use modeling techniques to allow fast retrieval of data. In this case, we will use the STAR schema.
+
+Execute the below files in order each time before pipeline.
+
+create_tables.py $ python3 create_tables.py
+etl.ipynb/et.py $ python3 etl.py
+test.ipynb
